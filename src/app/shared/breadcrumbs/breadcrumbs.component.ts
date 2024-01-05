@@ -3,9 +3,6 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-breadcrumbs',
   templateUrl: './breadcrumbs.component.html',
-  styles: [
-  ]
+  styles: [],
 })
-export class BreadcrumbsComponent {
-
-}
+export class BreadcrumbsComponent {}
