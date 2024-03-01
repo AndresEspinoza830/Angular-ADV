@@ -6,13 +6,13 @@ import { NopagefoundComponent } from './pages/nopagefound/nopagefound.component'
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'dashboard',
     loadChildren: () =>
       import('./pages/layout/layout.module').then((m) => m.LayoutModule),
   },
   { path: 'register', component: RegisterComponent },
   { path: 'login', component: LoginComponent },
-
+  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: '**', component: NopagefoundComponent },
 ];
 
